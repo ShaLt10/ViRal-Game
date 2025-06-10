@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: ViRal-DLH
+  companyName: TheGuidingLight
+  productName: 'ViRal : Digital Literacy Heroes'
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 1, g: 0.23529412, b: 0, a: 1}
@@ -79,6 +79,7 @@ PlayerSettings:
   androidMinimumWindowHeight: 300
   androidFullscreenMode: 1
   androidAutoRotationBehavior: 1
+  androidPredictiveBackSupport: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -86,6 +87,7 @@ PlayerSettings:
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
+  audioSpatialExperience: 0
   deferSystemGesturesMode: 0
   hideHomeButton: 0
   submitAnalytics: 1
@@ -141,7 +143,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 
+  bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -191,8 +193,10 @@ PlayerSettings:
   strictShaderVariantMatching: 0
   VertexChannelCompressionMask: 214
   iPhoneSdkVersion: 988
+  iOSSimulatorArchitecture: 0
   iOSTargetOSVersionString: 12.0
   tvOSSdkVersion: 0
+  tvOSSimulatorArchitecture: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 12.0
   VisionOSSdkVersion: 0
@@ -282,7 +286,7 @@ PlayerSettings:
   m_AndroidBanners:
   - width: 320
     height: 180
-    banner: {fileID: 0}
+    banner: {fileID: 2800000, guid: 147082bee23391b4e85b09faad42058b, type: 3}
   androidGamepadSupportLevel: 0
   chromeosInputEmulation: 1
   AndroidMinifyRelease: 0
@@ -293,7 +297,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: a7adf48d4c8aa994cbdb33b10ecd5073, type: 3}
+      m_Icon: {fileID: 2800000, guid: 147082bee23391b4e85b09faad42058b, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -610,6 +614,7 @@ PlayerSettings:
   switchSocketBufferEfficiency: 4
   switchSocketInitializeEnabled: 1
   switchNetworkInterfaceManagerInitializeEnabled: 1
+  switchDisableHTCSPlayerConnection: 0
   switchUseNewStyleFilepaths: 0
   switchUseLegacyFmodPriorities: 1
   switchUseMicroSleepForYield: 1
@@ -740,19 +745,23 @@ PlayerSettings:
     33: UNITY_POST_PROCESSING_STACK_V2
     4: UNITY_POST_PROCESSING_STACK_V2;POSTPROCESSING_INSTALLED;CINEMACHINE_INSTALLED;PIXELPERFECT_INSTALLED
     7: UNITY_POST_PROCESSING_STACK_V2;POSTPROCESSING_INSTALLED;CINEMACHINE_INSTALLED;PIXELPERFECT_INSTALLED;MOREMOUNTAINS_FEEDBACKS;MOREMOUNTAINS_TOOLS;MOREMOUNTAINS_INTERFACE;MOREMOUNTAINS_INVENTORYENGINE;MOREMOUNTAINS_TOPDOWNENGINE;MOREMOUNTAINS_POSTPROCESSING_INSTALLED;MOREMOUNTAINS_CINEMACHINE_INSTALLED;MOREMOUNTAINS_TEXTMESHPRO_INSTALLED;MOREMOUNTAINS_TOOLS_FOR_MMFEEDBACKS
-    Android: UNITY_POST_PROCESSING_STACK_V2;USE_CELTX3;USE_PHYSICS2D;USE_CINEMACHINE
-    EmbeddedLinux: UNITY_POST_PROCESSING_STACK_V2
-    GameCoreXboxOne: UNITY_POST_PROCESSING_STACK_V2
-    Nintendo Switch: UNITY_POST_PROCESSING_STACK_V2
-    PS4: UNITY_POST_PROCESSING_STACK_V2
-    PS5: UNITY_POST_PROCESSING_STACK_V2
-    QNX: UNITY_POST_PROCESSING_STACK_V2
-    Stadia: UNITY_POST_PROCESSING_STACK_V2
-    Standalone: UNITY_POST_PROCESSING_STACK_V2;MOREMOUNTAINS_TOPDOWNENGINE;MOREMOUNTAINS_INTERFACE;MOREMOUNTAINS_INVENTORYENGINE;USE_CELTX3;USE_PHYSICS2D;USE_CINEMACHINE
-    VisionOS: UNITY_POST_PROCESSING_STACK_V2
-    WebGL: UNITY_POST_PROCESSING_STACK_V2;USE_CELTX3;USE_PHYSICS2D;USE_CINEMACHINE
-    XboxOne: UNITY_POST_PROCESSING_STACK_V2
-    tvOS: UNITY_POST_PROCESSING_STACK_V2
+    Android: UNITY_POST_PROCESSING_STACK_V2;USE_CELTX3;USE_CINEMACHINE;DOTWEEN;USE_TIMELINE
+    EmbeddedLinux: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
+    Nintendo Switch: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    PS4: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    PS5: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    QNX: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Stadia: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    Standalone: UNITY_POST_PROCESSING_STACK_V2;MOREMOUNTAINS_TOPDOWNENGINE;MOREMOUNTAINS_INTERFACE;MOREMOUNTAINS_INVENTORYENGINE;USE_CELTX3;USE_CINEMACHINE;DOTWEEN;USE_TIMELINE
+    VisionOS: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;USE_CELTX3;USE_CINEMACHINE;DOTWEEN;USE_TIMELINE
+    Windows Store Apps: DOTWEEN
+    XboxOne: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
+    iPhone: DOTWEEN
+    tvOS: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1

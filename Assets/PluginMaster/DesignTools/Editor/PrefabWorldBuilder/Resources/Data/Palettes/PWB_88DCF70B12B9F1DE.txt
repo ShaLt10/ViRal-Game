@@ -8,7 +8,7 @@
         "_addLabelsToDroppedPrefabs": false,
         "_labelsCSV": "",
         "_defaultBrushSettings": {
-            "_id": -1,
+            "_id": 638756586528256690,
             "_surfaceDistance": 0.0,
             "_randomSurfaceDistance": false,
             "_randomSurfaceDistanceRange": {

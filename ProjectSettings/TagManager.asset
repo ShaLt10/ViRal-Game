@@ -16,13 +16,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - Obstacles
-  - Ground
-  - Player
-  - ObstaclesDoors
-  - NoPathfinding
+  - Tilemap1
+  - Tilemap2
+  - Tilemap3
+  - Characters
+  - Minigame1
+  - Minigame2
+  - Minigame3
   - Enemies
   - NoCollisions
   - Hole
