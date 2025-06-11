@@ -143,6 +143,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\SpriteExtension\PhysicsShape.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Shadow\Shadow.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Triangulation\DefaultTriagulator\UnityDefaultTriangulator.cs" />
+    <Compile Include="Assets\Scripts\SpotTheDifference\Difference.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Manager\LightingMeshRenderer.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\LightShapes\Extensions\MeshRendererShape.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\SoftShadowEngine.cs" />
@@ -200,6 +201,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Sprite Mesh\Tiled\SpriteTiledMesh.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\LightCollider\LightTilemapCollider2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\MaterialSystem.cs" />
+    <Compile Include="Assets\Scripts\EventManager.cs" />
     <Compile Include="Assets\Pixel Play\Scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\ShadowEngine.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Sorted.cs" />
@@ -228,6 +230,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightTilemap2D\Types\Base.cs" />
     <Compile Include="Assets\Scripts\Characters\MC_Gavi.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2\Polygon2\Polygon2Helper.cs" />
+    <Compile Include="Assets\Scripts\SpotTheDifference\DifferenceController.cs" />
     <Compile Include="Assets\Scripts\Core\SceneTransition.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Lightmap\Objects\TextureRenderer.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\DialogueSequence.cs" />

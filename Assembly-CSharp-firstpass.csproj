@@ -266,8 +266,8 @@
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Lua\Lua Interpreter\Parser\Syntax\ForStmt.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\MVC\Controller\ConversationController.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\UI\Utility\TextMeshProTypewriterEffect.cs" />
-    <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Lua\Lua Interpreter\Chunk\Chunk.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Lua\Lua Interpreter\Chunk\Statement.cs" />
+    <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Lua\Lua Interpreter\Chunk\Chunk.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\MVC\Model\Data\ConditionPriority.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\Conversation\ConversationMixerBehaviour.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Importers\Articy\Schemas\Articy 1.4\XmlContentExport_FullProject_1_4.cs" />
@@ -324,8 +324,8 @@
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Quests\QuestLog.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\UI\Utility\TypewriterUtility.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Lua\Lua Interpreter\LuaValue\LuaBoolean.cs" />
-    <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Selector\StandardUsableUI.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Options\Timeline\Playables\QuestState\QuestStateMixerBehaviour.cs" />
+    <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Wrappers\UI\Standard\Selector\StandardUsableUI.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\Manager\PersistentDataSettings.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Dialogue System\Scripts\MVC\Model\Data\Utility\CharacterTypeUtility.cs" />
     <Compile Include="Assets\Plugins\Pixel Crushers\Common\Scripts\UnityEvents\TagMask.cs" />

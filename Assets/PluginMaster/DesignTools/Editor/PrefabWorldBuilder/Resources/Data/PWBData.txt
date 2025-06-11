@@ -1,6 +1,6 @@
 {
     "_version": "3.9",
-    "_rootDirectory": "Assets/PluginMaster/DesignTools/Editor/PrefabWorldBuilder",
+    "_rootDirectory": "",
     "_autoSavePeriodMinutes": 1,
     "_undoBrushProperties": true,
     "_undoPalette": true,
@@ -186,7 +186,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915014589,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -485,7 +485,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915014591,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -813,7 +813,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915014593,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1122,7 +1122,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915014595,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1411,7 +1411,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915024635,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1720,7 +1720,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915024637,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1967,7 +1967,7 @@
             "_outermostPrefabFilter": true,
             "_overwriteBrushProperties": false,
             "_brushProperties": {
-                "_id": 638851921915024639,
+                "_id": -1,
                 "_surfaceDistance": 0.0,
                 "_randomSurfaceDistance": false,
                 "_randomSurfaceDistanceRange": {
@@ -2404,7 +2404,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915039795,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -2696,7 +2696,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 638851921915039797,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -2808,15 +2808,15 @@
         "_settings": {
             "_snappingEnabled": false,
             "_snappingOn": {
-                "x": true,
-                "y": true,
+                "x": false,
+                "y": false,
                 "z": false
             },
             "_visibleGrid": false,
             "_gridOn": {
                 "x": false,
-                "y": false,
-                "z": true
+                "y": true,
+                "z": false
             },
             "_lockedGrid": false,
             "_step": {
