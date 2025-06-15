@@ -39,5 +39,6 @@ public class CharacterSelect : MonoBehaviour
     private void SelectCharacter(TMP_FontAsset characterFont, string name)
     {
         characterSelector.setCharacter(name, characterFont);
+        SceneLoaderSingleton.Instance.LoadSceneMode(1);
     }
 }

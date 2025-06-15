@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Eventdata;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -27,7 +28,7 @@ public class Difference : MonoBehaviour, IPointerClickHandler
     { 
         isClicked = true;
         image.color = ChangeAlpha(image.color);
-        EventManager.Publish(new Win("Ente buta"));
+        EventManager.Publish(new DifferenceSpotted(1));
     }
 
     public Color ChangeAlpha(Color color)

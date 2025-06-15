@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Characters\CharacterSelect.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Misc\LightingMonobehavior.cs" />
     <Compile Include="Assets\Scripts\Core\CameraEnding.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\DontDestroy\SceneLoaderSingleton.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\Algorithm\PerpendicularIntersection.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Material\LightingMaterial.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightSprite2D\LightSpriteShape.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\Misc\TimerHelper.cs" />
     <Compile Include="Assets\FunkyCode\Demos - SmartLighting2D\Demos - Intermediate\5 - Race\Scripts\FollowRacer.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Pass.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Settings\LightingSettings.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Misc\LightingRender2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Graphics\SmartMaterial.cs" />
@@ -192,6 +194,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightTilemap2D\Types\Rectangle.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2D\Polygon\Polygon2DListCollider2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Camera\LightmapMaterials.cs" />
+    <Compile Include="Assets\Scripts\Eventdata\SpotTheDifferenceStatusData.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Buffers\LightMainBuffer2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightTilemap2D\LightTile.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Universal\Objects\Texture.cs" />
@@ -202,6 +205,7 @@
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2D\Vector2DList.cs" />
     <Compile Include="Assets\FunkyCode\Demos - SmartLighting2D\Demos - Intermediate\5 - Race\Scripts\RacerController.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Sprite Mesh\Tiled\SpriteTiledMesh.cs" />
+    <Compile Include="Assets\Scripts\SpotTheDifference\SpotTheDifferenceTime.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\LightCollider\LightTilemapCollider2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\MaterialSystem.cs" />
     <Compile Include="Assets\Scripts\EventManager.cs" />
@@ -230,6 +234,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Masks\SpriteRenderer2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\UI\UICanvasScale.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Lightmap\Light2D.cs" />
+    <Compile Include="Assets\Scripts\SingletonDestroy.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightTilemap2D\Types\Base.cs" />
     <Compile Include="Assets\Scripts\Characters\MC_Gavi.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2\Polygon2\Polygon2Helper.cs" />
@@ -240,10 +245,12 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Lightmap\LightParticleSystem2D.cs" />
     <Compile Include="Assets\Scripts\GameSystem\ProgressTracker.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2\Polygon2\Polygon2Collider2D.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\Destroy\SpotTheDifferenceSingleton.cs" />
     <Compile Include="Assets\Scripts\GrowUntilOnScreen.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\Light2D\LightFreeForm.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\CharacterSelected.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\DayLightCollider2D\DayLightColliderShape.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\DontDestroy\ScreenRotateControl.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\Mask\SkinnedMesh.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Components\Mesh2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\LightShapes\Extensions\SkinnedMeshRendererShape.cs" />
@@ -260,11 +267,14 @@
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightCollider2D\LayerManager.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Event Handling\LightTilemap.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\Destroy\InstagramFeedManager.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Universal\Objects\Sprite.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Depth\Main.cs" />
+    <Compile Include="Assets\Scripts\SpotTheDifference\ResultButton.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2\Vector2Extension.cs" />
     <Compile Include="Assets\FunkyCode\Demos - SmartLighting2D\Export Demo\GUIFPS.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Chunks\Tilemap\TilemapChunk.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\Destroy\TitleScreenmanager.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Depth\Pass.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\Mask\SpriteRenderer2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Event Handling\CollisionEvent.cs" />
@@ -302,6 +312,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Sorting\SortDepthList.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\LightCollider\LightCollider2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\Algorithm\Soft.cs" />
+    <Compile Include="Assets\Scripts\Eventdata\DifferenceSpotted.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\Main.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Sprite Mesh\Simple\SpriteMesh.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Depth\Rendering.cs" />

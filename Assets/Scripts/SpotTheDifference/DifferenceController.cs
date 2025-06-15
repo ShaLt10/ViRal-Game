@@ -1,59 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Eventdata;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DifferenceController : MonoBehaviour
 {
-    [SerializeField]
-    Image timeImage;
-    private float time;
-    private float timer;
+    private int diffCount;
 
-    private bool isActiveTimer=true;
+    private int allDiff = 6;
+
+    [SerializeField]
+    GameObject result;
     private void OnEnable()
     {
-        timer = 1;
-
-        EventManager.Subscribe<Win>(Win);
+        EventManager.Subscribe<DifferenceSpotted>(GameStart);
     }
 
     private void OnDisable()
     {
-        EventManager.Unsubscribe<Win>(Win);
+        EventManager.Unsubscribe<DifferenceSpotted>(GameStart);
     }
-    // Update is called once per frame
-    void Update()
+
+    private void GameStart(DifferenceSpotted data)
     {
-        if (isActiveTimer||timer>0)
+        diffCount++;
+        CheckAllDiff();
+    }
+
+    private void CheckAllDiff()
+    {
+        if (diffCount >= allDiff)
         {
-            timeImage.fillAmount = time;
-            timer -= Time.deltaTime / time;
+            result.SetActive(true);
+            EventManager.Publish(new SpotTheDifferenceStatusData(false, true, true));
+
         }
-        if (isActiveTimer)
-        {
-            isActiveTimer = false;
-            //TimesUp();
-        }
-        
-    }
-
-    private void TimesUp()
-    {
-    }
-
-    private void Win(Win win)
-    {
-        Debug.Log($"{win.win}");
-    }
-}
-
-public class Win
-{
-    public string win;
-
-    public Win(string win)
-    {
-        this.win = win;
     }
 }
