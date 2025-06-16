@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Berikutnya
+  m_text: Oke
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 629513986}
-  time: 10
+  time: 2
 --- !u!1 &719193095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,6 +1092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1811180687}
+  title: {fileID: 719193097}
+  description: {fileID: 498515487}
   win: 0
 --- !u!1 &1492738343
 GameObject:
@@ -1300,6 +1302,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1682708006}
+  title: {fileID: 1098013283}
+  description: {fileID: 1278648857}
   win: 0
 --- !u!1001 &1620239043
 PrefabInstance:
@@ -1932,7 +1936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1620239046}
-  time: 10
+  time: 2
 --- !u!1 &1620239048 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7597199262884607604, guid: 4d0faca3962513f4bbdef7ae4939767c,

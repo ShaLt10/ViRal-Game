@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Eventdata;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,11 +19,13 @@ public class SpotTheDifferenceTime : MonoBehaviour
     private void OnEnable()
     {
         EventManager.Subscribe<SpotTheDifferenceStatusData>(GameStart);
+        EventManager.Subscribe<ResetGameData>(ResetGame);
     }
 
     private void OnDisable()
     {
         EventManager.Unsubscribe<SpotTheDifferenceStatusData>(GameStart);
+        EventManager.Unsubscribe<ResetGameData>(ResetGame);
     }
 
     public void Update()
@@ -30,11 +33,13 @@ public class SpotTheDifferenceTime : MonoBehaviour
         if (!isGameFinished)
         {
             timeLeft -= Time.deltaTime / time;
-            Debug.Log($"time {timeLeft}");
+            //Debug.Log($"time {timeLeft}");
             image.fillAmount = timeLeft;
             if (timeLeft <= 0)
             {
-                EventManager.Publish(new SpotTheDifferenceStatusData(false,false,false));
+                EventManager.Publish(new SpotTheDifferenceStatusData(false,false,true));
+
+                Debug.Log($"time {timeLeft}");
             }
         }
     }
@@ -44,11 +49,18 @@ public class SpotTheDifferenceTime : MonoBehaviour
     {
         if (data.gameFinished == true)
         {
+            Debug.Log("kalah");
             isGameFinished = data.gameFinished;
         }
         else if (data.gameStart == true)
         {
             isGameFinished = false;
         }
+    }
+
+    public void ResetGame(ResetGameData data)
+    {
+        timeLeft = 1;
+        isGameFinished = false;
     }
 }
