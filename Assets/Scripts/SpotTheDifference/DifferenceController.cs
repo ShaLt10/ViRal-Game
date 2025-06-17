@@ -15,19 +15,19 @@ public class DifferenceController : MonoBehaviour
     GameObject result;
     private void OnEnable()
     {
-        EventManager.Subscribe<DifferenceSpotted>(GameStart);
+        EventManager.Subscribe<DifferenceSpottedData>(GameStart);
         EventManager.Subscribe<ResetGameData>(RestartGame);
         EventManager.Subscribe<SpotTheDifferenceStatusData>(GameEnd);
     }
 
     private void OnDisable()
     {
-        EventManager.Unsubscribe<DifferenceSpotted>(GameStart);
+        EventManager.Unsubscribe<DifferenceSpottedData>(GameStart);
         EventManager.Unsubscribe<ResetGameData>(RestartGame);
         EventManager.Unsubscribe<SpotTheDifferenceStatusData>(GameEnd);
     }
 
-    private void GameStart(DifferenceSpotted data)
+    private void GameStart(DifferenceSpottedData data)
     {
         diffCount++;
         CheckAllDiff();

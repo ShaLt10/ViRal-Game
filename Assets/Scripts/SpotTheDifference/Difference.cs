@@ -39,7 +39,7 @@ public class Difference : MonoBehaviour, IPointerClickHandler
     { 
         isClicked = true;
         image.color = ChangeAlpha(image.color);
-        EventManager.Publish(new DifferenceSpotted(1));
+        EventManager.Publish(new DifferenceSpottedData(1));
     }
 
     public Color ChangeAlpha(Color color, float a =1)

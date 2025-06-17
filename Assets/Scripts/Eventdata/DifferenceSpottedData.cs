@@ -1,10 +1,10 @@
 ﻿namespace Assets.Scripts.Eventdata
 {
-    public class DifferenceSpotted
+    public class DifferenceSpottedData
     {
         public int addDifference;
 
-        public DifferenceSpotted(int addDifference)
+        public DifferenceSpottedData(int addDifference)
         {
             this.addDifference = addDifference;
         }

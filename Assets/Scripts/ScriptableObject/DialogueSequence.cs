@@ -6,12 +6,17 @@ using UnityEngine;
 /// <summary>
 /// Digunakan untuk menyimpan dialog.
 /// </summary>
-[CreateAssetMenu(fileName ="DialogueSequence", menuName = "Game/Dialogue/DialogueSequence")]
+[CreateAssetMenu(fileName = "DialogueSequence", menuName = "Game/Dialogue/DialogueSequence")]
 public class DialogueSequence : ScriptableObject
 {
-    [SerializeField] private string sequenceName;
+    [SerializeField] public string sequenceName;
     [SerializeField] private string sequenceDescription;
     [SerializeField] private Dialogue[] dialogue;
+
+    public Dialogue[] GetDialogue()
+    {
+        return dialogue;
+    }
 }
 
 
@@ -33,7 +38,7 @@ public class Dialogue
     /// <summary>
     /// Gambar dari potrait yang akan ditampilkan
     /// </summary>
-    public ImagePotrait[] imagePotrait;
+    public ImagePotrait imagePotrait;
 
 }
 

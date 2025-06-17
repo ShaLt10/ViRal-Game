@@ -26,4 +26,7 @@ MonoBehaviour:
       apakah dibuat animasi?
 
       ndak dulu'
-    imagePotrait: []
+    imagePotrait:
+      potraitImage: {fileID: 21300000, guid: f04588af8835688439fc953c9310bce9, type: 3}
+      imageLocation: 0
+      clearImage: 0
