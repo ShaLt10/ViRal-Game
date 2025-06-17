@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = is3D ? new Vector3(input.x, 0, input.y) : new Vector3(input.x, input.y, 0);
         //rb.velocity = move * moveSpeed * Time.deltaTime;
         transform.Translate(move * moveSpeed * Time.deltaTime);
-        animator.SetFloat(Movex, Mathf.Abs(move.x));
+        animator.SetFloat(Movex, move.x);
         animator.SetFloat(Movey, move.y);
         animator.SetFloat(Speed, Vector3.Magnitude(move));
         if (move.x < 0)

@@ -129,6 +129,7 @@
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\PrefabWorldBuilder\Scripts\ExtrudeManager.cs" />
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\CommonPaint\Scripts\BoundsOctree.cs" />
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\Common\Scripts\MeshUtils.cs" />
+    <Compile Include="Assets\Editor\SpriteSheetAnimationGenerator.cs" />
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\PrefabWorldBuilder\Scripts\SelectionToolManager.cs" />
   </ItemGroup>
   <ItemGroup>
