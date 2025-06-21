@@ -254,6 +254,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightTilemap2D\Types\Base.cs" />
     <Compile Include="Assets\Scripts\Characters\MC_Gavi.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2\Polygon2\Polygon2Helper.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\Destroy\Map1.cs" />
     <Compile Include="Assets\Scripts\SpotTheDifference\DifferenceController.cs" />
     <Compile Include="Assets\Scripts\Core\SceneTransition.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Lightmap\Objects\TextureRenderer.cs" />
