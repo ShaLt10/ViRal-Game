@@ -127,6 +127,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Misc\LightTexture.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\LightTilemapOcclusion\OcclusionTileset.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\Misc\TimerHelper.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueKey.cs" />
     <Compile Include="Assets\FunkyCode\Demos - SmartLighting2D\Demos - Intermediate\5 - Race\Scripts\FollowRacer.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Pass.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
@@ -153,6 +154,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\LightShapes\Extensions\MeshRendererShape.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\SoftShadowEngine.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Material\Extended\Lights.cs" />
+    <Compile Include="Assets\Scripts\Utility\DialoguesNames.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\SuperTilemapEditor\Rendering\Light\Mask\SpriteRenderer2D.cs" />
     <Compile Include="Assets\Scripts\Interact.cs" />
     <Compile Include="Assets\Scripts\Core\AudioManager.cs" />
@@ -162,9 +164,11 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Misc\GizmosHelper.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2D\DoublePair2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Lightmap\NoSort.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\DontDestroy\No AutoLoad\PreDetermindSingleton.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Camera\CameraSettings.cs" />
     <Compile Include="Assets\Pixel Play\Scripts\OffScreenIndicator\OffScreenIndicator.cs" />
     <Compile Include="Assets\Scripts\Characters\CharacterSelector.cs" />
+    <Compile Include="Assets\Scripts\SceneManager\Destroy\TutorialManager.cs" />
     <Compile Include="Assets\Pixel Crushers\Dialogue System\Third Party Support\TopDown Engine Support\Scripts\PauseTopDownDuringConversations.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Event Handling\LightEventListenerCount.cs" />
     <Compile Include="Assets\Scripts\SpotTheDifference.cs" />
@@ -176,6 +180,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Manager\OnRenderMode.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Lightmap\LightSprite2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\Mask\Tile.cs" />
+    <Compile Include="Assets\Scripts\InstagramFeed\QuestionContoller.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Effects\LightCycle.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\Algorithm\SoftShadowSorter.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\ShadowEngine\Algorithm\Fast.cs" />
@@ -210,7 +215,9 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Sprite Mesh\SpriteMeshObject.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2D\Vector2DList.cs" />
     <Compile Include="Assets\FunkyCode\Demos - SmartLighting2D\Demos - Intermediate\5 - Race\Scripts\RacerController.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObject\IntagramFeedQuestionData.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Sprite Mesh\Tiled\SpriteTiledMesh.cs" />
+    <Compile Include="Assets\Scripts\Eventdata\InstagramFeed\QuestionData.cs" />
     <Compile Include="Assets\Scripts\SpotTheDifference\SpotTheDifferenceTime.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\LightCollider\LightTilemapCollider2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\MaterialSystem.cs" />
@@ -344,6 +351,7 @@
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Triangulation\PolygonTriangulator2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\Utilities\2D\Polygon\Polygon2DHelper.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Depth\Shadow\SpriteRendererShadow.cs" />
+    <Compile Include="Assets\Scripts\Eventdata\InstagramFeed\InstagramFeedStatusData.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\Light2D\LightTransform.cs" />
     <Compile Include="Assets\Scripts\Core\ScreenController.cs" />
     <Compile Include="Assets\Pixel Crushers\Common\Third Party Support\TopDown Engine Support\Scripts\TDECharacterSaver.cs" />

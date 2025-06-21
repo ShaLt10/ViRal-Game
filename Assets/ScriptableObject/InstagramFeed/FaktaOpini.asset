@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f16e43d2107f149be83d71c4b036bd, type: 3}
+  m_Name: FaktaOpini
+  m_EditorClassIdentifier: 
+  datas:
+  - image: {fileID: 21300000, guid: c63a8d9465c360b499b181190f1ba41d, type: 3}
+    Question: Saya fakta 1
+    Fact: 1
+  - image: {fileID: 21300000, guid: 079f5a8d00f74c84181be0a872b4c39d, type: 3}
+    Question: Saya Opini 1
+    Fact: 0
+  - image: {fileID: 21300002, guid: 079f5a8d00f74c84181be0a872b4c39d, type: 3}
+    Question: Saya fakta 2
+    Fact: 1
+  - image: {fileID: 21300004, guid: 079f5a8d00f74c84181be0a872b4c39d, type: 3}
+    Question: Saya fakta 3
+    Fact: 1
+  - image: {fileID: 21300006, guid: 079f5a8d00f74c84181be0a872b4c39d, type: 3}
+    Question: Saya opini
+    Fact: 0
+  - image: {fileID: -8100999528106053950, guid: 69a74d879e969d8409d9bf5e6c86c57c,
+      type: 3}
+    Question: Saya fakta 2
+    Fact: 1
+  - image: {fileID: -3914155176887880115, guid: 69a74d879e969d8409d9bf5e6c86c57c,
+      type: 3}
+    Question: Saya Opini 121
+    Fact: 0
+  - image: {fileID: 21300000, guid: 8f6fc5f23ee901d449ed94ded8d1a85e, type: 3}
+    Question: Saya Opini 231
+    Fact: 0
+  - image: {fileID: 21300006, guid: acc0224da40bd614eaa39fa27daa0b19, type: 3}
+    Question: Saya fakta 2
+    Fact: 1
+  - image: {fileID: 21300004, guid: acc0224da40bd614eaa39fa27daa0b19, type: 3}
+    Question: Saya Opini 123464
+    Fact: 0
+  - image: {fileID: 21300010, guid: acc0224da40bd614eaa39fa27daa0b19, type: 3}
+    Question: Saya fakta 2
+    Fact: 1
+  - image: {fileID: 21300008, guid: acc0224da40bd614eaa39fa27daa0b19, type: 3}
+    Question: Saya opini 1231212123123
+    Fact: 0
+  - image: {fileID: 21300002, guid: acc0224da40bd614eaa39fa27daa0b19, type: 3}
+    Question: Saya fakta 2
+    Fact: 0

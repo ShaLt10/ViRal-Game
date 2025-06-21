@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,10 @@ using UnityEngine;
 public class OnDialogueRequestData 
 {
     public string sequenceName;
-
-    public OnDialogueRequestData(string sequenceName)
+    public Action action;
+    public OnDialogueRequestData(string sequenceName, Action action = null)
     { 
     this.sequenceName = sequenceName;
+        this.action = action;
     }
 }

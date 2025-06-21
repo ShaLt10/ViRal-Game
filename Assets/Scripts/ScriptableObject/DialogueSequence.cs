@@ -40,6 +40,8 @@ public class Dialogue
     /// </summary>
     public ImagePotrait imagePotrait;
 
+    public Action Doafter;
+
 }
 
 /// <summary>

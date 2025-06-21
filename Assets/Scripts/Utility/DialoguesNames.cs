@@ -1,0 +1,19 @@
+// Auto-generated file. Do not edit manually.
+public static class DialoguesNames
+{
+	public const string Area1_Dialogue_1_Gavi = "Area1-Dialogue-1_Gavi";
+	public const string Area1_Dialogue_1_Raline = "Area1-Dialogue-1_Raline";
+	public const string Area1_PlayerOpening = "Area1-PlayerOpening";
+	public const string CharacterSelection_Gavi = "CharacterSelection_Gavi";
+	public const string CharacterSelection_Raline = "CharacterSelection_Raline";
+	public const string MainMenu1 = "MainMenu1";
+	public const string Test_Dialogue = "Test Dialogue";
+	public const string Tutorial_F_Gavi = "Tutorial-F-Gavi";
+	public const string Tutorial_F_Raline = "Tutorial-F-Raline";
+	public const string Tutorial_I_Gavi = "Tutorial-I-Gavi";
+	public const string Tutorial_I_Raline = "Tutorial-I-Raline";
+	public const string Tutorial_S_Gavi = "Tutorial-S-Gavi";
+	public const string Tutorial_S_Raline = "Tutorial-S-Raline";
+	public const string Tutorial_T_Gavi = "Tutorial-T-Gavi";
+	public const string Tutorial_T_Raline = "Tutorial-T-Raline";
+}

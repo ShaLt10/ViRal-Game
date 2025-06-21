@@ -24,21 +24,26 @@ public class CharacterSelect : MonoBehaviour
     [SerializeField] private Button selectRaline;
     [SerializeField] private TMP_FontAsset ralineFont;
 
+    [SerializeField]
+    Button Confirm;
+
     private void Awake()
     {
         selectGavi.onClick.AddListener(()=>SelectCharacter(gaviFont,StringContainer.Gavi));
         selectRaline.onClick.AddListener(() => SelectCharacter(ralineFont, StringContainer.Raline));
+        Confirm.onClick.AddListener(() => SceneLoaderSingleton.Instance.LoadSceneMode(1));
     }
 
     private void OnDestroy()
     {
         selectGavi.onClick.RemoveAllListeners();
         selectRaline.onClick.RemoveAllListeners();
+        Confirm.onClick.RemoveAllListeners();
     }
 
     private void SelectCharacter(TMP_FontAsset characterFont, string name)
     {
         characterSelector.setCharacter(name, characterFont);
-        SceneLoaderSingleton.Instance.LoadSceneMode(1);
+        EventManager.Publish(new OnDialogueRequestData($"CharacterSelection_{name}", () => Confirm.gameObject.SetActive(true)));
     }
 }

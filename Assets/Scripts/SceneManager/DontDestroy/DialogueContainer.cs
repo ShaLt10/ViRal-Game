@@ -1,24 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueContainer : Singleton<DialogueContainer>
+public class DialogueContainer : PreDetermindSingleton<DialogueContainer>
 {
 
     [SerializeField]
     List<DialogueSequence> sequences = new();
 
-    public void Sequences(string id)
+    [SerializeField]
+    public CharacterSelected CharacterSelected;
+
+    public void Sequences(string id, Action action = null)
     { 
         var dialogue = sequences.Find(x => x.sequenceName == id);
+        Debug.Log($"hahahihi{id}");
         if (dialogue == null) return;
         Debug.Log("Kiriman");
-        EventManager.Publish<DialogueSendData>(new DialogueSendData(dialogue.GetDialogue()));
+        EventManager.Publish<DialogueSendData>(new DialogueSendData(dialogue.GetDialogue(),action));
     }
 
-    protected override void OnDestroy()
+    public void Nothing()
     {
-        base.OnDestroy();
+       // Debug.Log("nothing");
     }
 
     private void OnEnable()
@@ -34,6 +39,7 @@ public class DialogueContainer : Singleton<DialogueContainer>
 
     private void CallDialogue(OnDialogueRequestData data)
     {
-        Sequences(data.sequenceName);
+        Debug.Log("data request dialogue");
+        Sequences(data.sequenceName,data.action);
     }
 }

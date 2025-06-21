@@ -122,6 +122,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Editor\Misc\EditorGameObjects.cs" />
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\PrefabWorldBuilder\Scripts\ThumbnailEditorWindow.cs" />
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\Common\Scripts\RandomUtils.cs" />
+    <Compile Include="Assets\Editor\SequenceNameConstGenerator.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Editor\Occlusion\LightOcclusion2DEditor.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Editor\Manager\LightingManager2DEditor.cs" />
     <Compile Include="Assets\PluginMaster\DesignTools\Editor\Common\Scripts\TerrainUtils.cs" />

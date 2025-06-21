@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -20,7 +19,10 @@ public class DialogueBox : MonoBehaviour, IPointerDownHandler
     [SerializeField]
     Dialogue[] dialogues = Array.Empty<Dialogue>();
 
-    int count;
+    int count = 0;
+
+    [SerializeField]
+    Image bigButton;
 
     private void OnEnable()
     {
@@ -32,21 +34,43 @@ public class DialogueBox : MonoBehaviour, IPointerDownHandler
         EventManager.Subscribe<DialogueSendData>(ShowDialogue);
     }
 
+    private void Start()
+    {
+        DialogueContainer.Instance.Nothing();
+    }
+
     public void ShowDialogue(DialogueSendData data)
     {
         Debug.Log("ShowAh");
         count = 0;
         dialogBox.SetActive(true);
+        bigButton.raycastTarget = true;
         dialogues = new Dialogue[data.dialogues.Length];
         data.dialogues.CopyTo(dialogues,0);
+        UpdateDialogue();
 
-        potrait.sprite = dialogues[count].imagePotrait.potraitImage;
-        Narrator.SetText($"{dialogues[count].speaker}");
-        Text.SetText($"{dialogues[count].dialogue}");
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        dialogBox.SetActive(false);
+        if (count + 1 < dialogues.Length)
+        {
+            count++;
+            UpdateDialogue();
+        }
+        else
+        {
+            bigButton.raycastTarget = false;
+            dialogBox.SetActive(false);
+            Debug.Log("hayo");
+            dialogues.Last().Doafter?.Invoke();
+        }
+    }
+
+    private void UpdateDialogue()
+    {
+        potrait.sprite = dialogues[count].imagePotrait.potraitImage;
+        Narrator.SetText($"{dialogues[count].speaker}");
+        Text.SetText($"{dialogues[count].dialogue}");
     }
 }

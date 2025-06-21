@@ -25,4 +25,9 @@ public class CharacterSelected : ScriptableObject
         this.characterName = characterName;
         this.characterFont = characterFont;
     }
+
+    public string GetName()
+    { 
+        return characterName;
+    }
 }
