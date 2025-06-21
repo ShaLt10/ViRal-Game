@@ -9,7 +9,7 @@ public class SpotTheDifferenceTime : MonoBehaviour
     [SerializeField]
     private Image image;
 
-    private bool isGameFinished;
+    private bool isGameFinished = true;
     
     [SerializeField]
     private float time;

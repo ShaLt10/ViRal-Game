@@ -83,11 +83,11 @@ public class TutorialManager : SingletonDestroy<TutorialManager>
                 T.SetActive(true);
                 break;
         }
-        count++;
     }
 
     private void ChangeDialogue()
     {
+        count ++;
         NextTutorial();
         DisableAllText();
         if (count >= 4)

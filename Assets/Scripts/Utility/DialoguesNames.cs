@@ -3,10 +3,20 @@ public static class DialoguesNames
 {
 	public const string Area1_Dialogue_1_Gavi = "Area1-Dialogue-1_Gavi";
 	public const string Area1_Dialogue_1_Raline = "Area1-Dialogue-1_Raline";
-	public const string Area1_PlayerOpening = "Area1-PlayerOpening";
+	public const string Area1_PlayerOpening_Gavi = "Area1-PlayerOpening-Gavi";
+	public const string Area1_PlayerOpening_Raline = "Area1-PlayerOpening-Raline";
+	public const string Area2_Gavi = "Area2-Gavi";
 	public const string CharacterSelection_Gavi = "CharacterSelection_Gavi";
 	public const string CharacterSelection_Raline = "CharacterSelection_Raline";
+	public const string InstagramFeed_Lost = "InstagramFeed-Lost";
+	public const string InstagramFeed_Opening = "InstagramFeed-Opening";
+	public const string InstagramFeed_Win = "InstagramFeed-Win";
 	public const string MainMenu1 = "MainMenu1";
+	public const string SpotTheDifference_Lose = "SpotTheDifference-Lose";
+	public const string SpotTheDifference_Stage2 = "SpotTheDifference-Stage2";
+	public const string SpotTheDifference_win_Gavi = "SpotTheDifference-win-Gavi";
+	public const string SpotTheDifference_win_Raline = "SpotTheDifference-win-Raline";
+	public const string SpotTheDifference_Opening = "SpotTheDifference-Opening";
 	public const string Test_Dialogue = "Test Dialogue";
 	public const string Tutorial_F_Gavi = "Tutorial-F-Gavi";
 	public const string Tutorial_F_Raline = "Tutorial-F-Raline";

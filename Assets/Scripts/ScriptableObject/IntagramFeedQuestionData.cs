@@ -46,4 +46,11 @@ public class InstagramQuestionData
         this.Question = data.Question;
         this.Fact = data.Fact;
     }
+
+    public InstagramQuestionData()
+    {
+        this.image = null;
+        this.Question = "";
+        this.Fact = false;
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestionData
 {
-    public InstagramQuestionData data;
+    public InstagramQuestionData data = new();
 
     public QuestionData(InstagramQuestionData data)
     {

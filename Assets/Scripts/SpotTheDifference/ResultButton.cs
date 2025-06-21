@@ -48,6 +48,7 @@ public class ResultButton : MonoBehaviour
             win = 0;
             title.SetText($"Tidak Semua Didapatkan");
             description.SetText($"kamu belum mendapatkan semua perbedaan yang ada pada kedua gambar");
+            EventManager.Publish(new OnDialogueRequestData($"{DialoguesNames.SpotTheDifference_Lose}"));
         }
     }
 }

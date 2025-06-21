@@ -85,6 +85,7 @@
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Universal\Objects\GLExtended.cs" />
     <Compile Include="Assets\Pixel Crushers\Dialogue System\Third Party Support\TopDown Engine Support\Scripts\DialogueSystemTopDownEventListener.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Scripts\UI\UITextScale.cs" />
+    <Compile Include="Assets\Scripts\AvoidPlayer.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Components\Lightmap\LightTexture2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Day\Shadow\SpriteRendererShadow.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Event Handling\Object.cs" />
@@ -190,6 +191,7 @@
     <Compile Include="Assets\Scripts\DialogueNPC\KayanaMap1.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\Sorting\SortList.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Lightmap\Pass.cs" />
+    <Compile Include="Assets\Scripts\Eventdata\InstagramFeed\GetQuestion.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\LightShapes\Extensions\CompositeCollider2DShape.cs" />
     <Compile Include="Assets\Scripts\UI\MinigameUI.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Misc\MeshObject.cs" />
@@ -268,6 +270,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\CharacterSelected.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Components\DayLightCollider2D\DayLightColliderShape.cs" />
     <Compile Include="Assets\Scripts\SceneManager\DontDestroy\ScreenRotateControl.cs" />
+    <Compile Include="Assets\Scripts\DialogueNPC\AlunaMap2.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\Rendering\Light\Mask\SkinnedMesh.cs" />
     <Compile Include="Assets\FunkyCode\SmartUtilities2D\Components\Mesh2D.cs" />
     <Compile Include="Assets\FunkyCode\SmartLighting2D\Scripts\LightShapes\Extensions\SkinnedMeshRendererShape.cs" />
