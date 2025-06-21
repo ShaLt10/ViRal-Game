@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50140316f9615d409a3666aa3f9096f, type: 3}
   m_Name: Area2-Raline
   m_EditorClassIdentifier: 
-  sequenceName: Area2-Gavi
+  sequenceName: Area2-Raline
   sequenceDescription: 
   dialogue:
   - speaker: Aluna

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Assets.Scripts.Eventdata;
 using Game.Utility;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpotTheDifferenceSingleton : Singleton<SpotTheDifferenceSingleton>
 {
@@ -52,13 +53,14 @@ public class SpotTheDifferenceSingleton : Singleton<SpotTheDifferenceSingleton>
         }
         else if (gameType >1) 
         {
+            var scene = SceneManager.GetActiveScene();
             if (DialogueContainer.Instance.CharacterSelected.GetName() == StringContainer.Gavi)
             {
-                EventManager.Publish(new OnDialogueRequestData($"{DialoguesNames.SpotTheDifference_win_Gavi}", () => SceneLoaderSingleton.Instance.LoadSceneMode(0)));
+                EventManager.Publish(new OnDialogueRequestData($"{DialoguesNames.SpotTheDifference_win_Gavi}", () => SceneLoaderSingleton.Instance.LoadSceneMode(scene.buildIndex+1)));
             }
             else
             {
-                EventManager.Publish(new OnDialogueRequestData($"{DialoguesNames.SpotTheDifference_win_Raline}", () => SceneLoaderSingleton.Instance.LoadSceneMode(0)));
+                EventManager.Publish(new OnDialogueRequestData($"{DialoguesNames.SpotTheDifference_win_Raline}", () => SceneLoaderSingleton.Instance.LoadSceneMode(scene.buildIndex + 1)));
             }
         }
     }

@@ -32,6 +32,7 @@ public class TutorialManager : SingletonDestroy<TutorialManager>
 
     public void NextTutorial()
     {
+        DisableAllText();
         switch (count)
         { 
             case 0:
@@ -89,7 +90,6 @@ public class TutorialManager : SingletonDestroy<TutorialManager>
     {
         count ++;
         NextTutorial();
-        DisableAllText();
         if (count >= 4)
         {
             SceneManager.LoadScene(3);
