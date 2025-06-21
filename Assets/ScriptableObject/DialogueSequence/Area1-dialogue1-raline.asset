@@ -33,9 +33,9 @@ MonoBehaviour:
       imageLocation: 0
       clearImage: 0
   - speaker: Kanaya
-    dialogue: <i>iTurns phone screen toward player, points at Instagram post</i>
-      "Nih lihat! Di Instagram @gen.zberdampak lagi buka recruitment volunteer. Ada
-      posternya yang aesthetic banget! Acara skala provinsi gitu, offline event!
+    dialogue: <i>Turns phone screen toward player, points at Instagram post</i> "Nih
+      lihat! Di Instagram @gen.zberdampak lagi buka recruitment volunteer. Ada posternya
+      yang aesthetic banget! Acara skala provinsi gitu, offline event!
     imagePotrait:
       potraitImage: {fileID: 21300000, guid: b328d74c1a41be243bf5c6d70ed09fa9, type: 3}
       imageLocation: 0

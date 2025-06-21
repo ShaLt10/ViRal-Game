@@ -31,7 +31,7 @@ public class DialogueBox : MonoBehaviour, IPointerDownHandler
 
     private void OnDisable()
     {
-        EventManager.Subscribe<DialogueSendData>(ShowDialogue);
+        EventManager.Unsubscribe<DialogueSendData>(ShowDialogue);
     }
 
     private void Start()

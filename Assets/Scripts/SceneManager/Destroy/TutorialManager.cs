@@ -32,7 +32,6 @@ public class TutorialManager : SingletonDestroy<TutorialManager>
 
     public void NextTutorial()
     {
-        count++;
         switch (count)
         { 
             case 0:
@@ -84,6 +83,7 @@ public class TutorialManager : SingletonDestroy<TutorialManager>
                 T.SetActive(true);
                 break;
         }
+        count++;
     }
 
     private void ChangeDialogue()

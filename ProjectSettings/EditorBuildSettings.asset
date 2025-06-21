@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: f717baf84c0f3fe44804c87cf43157c3
   - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: 3c8afbf6de1c9dd41a60969ae7577d6d
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: a8b300f18a15347438eddaf845568d78
   - enabled: 1
-    path: Assets/Scenes/InstagramFeed.unity
-    guid: 9b865eb66c70c38409294f82c6fd4fa9
-  - enabled: 1
     path: Assets/Scenes/SpotTheDifference.unity
     guid: 0fb68c34f3fd6a044abcbe77765898fb
+  - enabled: 1
+    path: Assets/Scenes/InstagramFeed.unity
+    guid: 9b865eb66c70c38409294f82c6fd4fa9
   m_configObjects: {}

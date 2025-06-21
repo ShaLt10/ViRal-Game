@@ -12,13 +12,21 @@ public class DialogueContainer : PreDetermindSingleton<DialogueContainer>
     [SerializeField]
     public CharacterSelected CharacterSelected;
 
-    public void Sequences(string id, Action action = null)
+    private void Sequences(string id, Action action = null)
     { 
         var dialogue = sequences.Find(x => x.sequenceName == id);
         Debug.Log($"hahahihi{id}");
         if (dialogue == null) return;
         Debug.Log("Kiriman");
         EventManager.Publish<DialogueSendData>(new DialogueSendData(dialogue.GetDialogue(),action));
+    }
+    public void Sequences(string id)
+    {
+        var dialogue = sequences.Find(x => x.sequenceName == id);
+        Debug.Log($"hahahihi{id}");
+        if (dialogue == null) return;
+        Debug.Log("Kiriman");
+        EventManager.Publish<DialogueSendData>(new DialogueSendData(dialogue.GetDialogue()));
     }
 
     public void Nothing()
