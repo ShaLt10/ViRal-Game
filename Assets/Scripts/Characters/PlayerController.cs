@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Game.Utility;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerInteract))]
@@ -22,9 +23,22 @@ public class PlayerController : MonoBehaviour
     private static int Facey = Animator.StringToHash("FaceY");
     private PlayerInteract interact;
 
+    [SerializeField]
+    RuntimeAnimatorController Raline;
+
+    [SerializeField]
+    RuntimeAnimatorController Gavi;
     private void Awake()
     {
         interact = GetComponent<PlayerInteract>();
+        if (DialogueContainer.Instance.CharacterSelected.GetName() == StringContainer.Raline)
+        {
+            animator.runtimeAnimatorController = Raline;
+        }
+        else
+        {
+            animator.runtimeAnimatorController = Gavi;
+        }
     }
 
 

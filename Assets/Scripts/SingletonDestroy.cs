@@ -7,7 +7,7 @@ public class SingletonDestroy<T> : MonoBehaviour where T : MonoBehaviour
 {
     protected static T _instance;
     protected static object _lock = new object();
-    protected static T Instance
+    public static T Instance
     {
         get
         {

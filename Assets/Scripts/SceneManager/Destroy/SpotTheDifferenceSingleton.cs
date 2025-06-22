@@ -18,6 +18,8 @@ public class SpotTheDifferenceSingleton : Singleton<SpotTheDifferenceSingleton>
 
     private void Start()
     {
+        ScreenRotateControl.Instance.SetLandscape();
+
         EventManager.Publish(new OnDialogueRequestData($"{DialoguesNames.SpotTheDifference_Opening}", StartGame));
     }
 

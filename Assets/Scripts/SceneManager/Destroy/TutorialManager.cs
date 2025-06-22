@@ -27,6 +27,7 @@ public class TutorialManager : SingletonDestroy<TutorialManager>
 
     private void Start()
     {
+        ScreenRotateControl.Instance.SetLandscape();
         NextTutorial();
     }
 
