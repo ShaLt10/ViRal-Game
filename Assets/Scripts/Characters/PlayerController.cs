@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     RuntimeAnimatorController Gavi;
-    private void Awake()
+    private void Start()
     {
         interact = GetComponent<PlayerInteract>();
         if (DialogueContainer.Instance.CharacterSelected.GetName() == StringContainer.Raline)

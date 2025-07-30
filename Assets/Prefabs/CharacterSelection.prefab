@@ -66,10 +66,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Character Selection
+  m_text: Choose Your MC!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4eccd51250cfa3948a3ac1e21d15fe34, type: 2}
-  m_sharedMaterial: {fileID: 7304186015023537574, guid: 4eccd51250cfa3948a3ac1e21d15fe34,
+  m_fontAsset: {fileID: 11400000, guid: 072e4e907e2a69d448680fd68c93d07f, type: 2}
+  m_sharedMaterial: {fileID: -7823978997378977449, guid: 072e4e907e2a69d448680fd68c93d07f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -223,8 +223,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gavi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2ecc4eef08bef7d4083406f284c093d8, type: 2}
-  m_sharedMaterial: {fileID: -6159658335563363560, guid: 2ecc4eef08bef7d4083406f284c093d8,
+  m_fontAsset: {fileID: 11400000, guid: 1ed8fb6d404544f49ac38b834bc1059d, type: 2}
+  m_sharedMaterial: {fileID: -2846469588950012406, guid: 1ed8fb6d404544f49ac38b834bc1059d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.35
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -358,8 +358,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Raline
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4eccd51250cfa3948a3ac1e21d15fe34, type: 2}
-  m_sharedMaterial: {fileID: 7304186015023537574, guid: 4eccd51250cfa3948a3ac1e21d15fe34,
+  m_fontAsset: {fileID: 11400000, guid: 1ed8fb6d404544f49ac38b834bc1059d, type: 2}
+  m_sharedMaterial: {fileID: -2846469588950012406, guid: 1ed8fb6d404544f49ac38b834bc1059d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.35
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

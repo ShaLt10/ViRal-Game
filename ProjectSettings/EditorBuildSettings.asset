@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Map2.unity
     guid: c4d92bd5f6e704f449934483c52ff4b6
   - enabled: 1
-    path: Assets/Scenes/InstagramFeed.unity
+    path: Assets/Scenes/InstagramLive.unity
     guid: 9b865eb66c70c38409294f82c6fd4fa9
   - enabled: 1
     path: Assets/Scenes/Map3.unity
