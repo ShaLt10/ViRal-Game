@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02376f25e1abb9c4e84f5007f2f3fecf, type: 3}
+  m_Name: Q06_MultipleChoice
+  m_EditorClassIdentifier: 
+  id: Q06_MultipleChoice
+  type: 0
+  questionText: 'Viral di Threads: "BMKG prediksi gempa megathrust bakal terjadi
+    2 minggu lagi!". Kamu mau nerapin Find Better Coverage. Langkah paling tepat
+    adalah...'
+  correctExplanation: Bener banget! Find Better Coverage artinya ninggalin asumsi
+    liar dan beralih ke sumber yang punya otoritas atau verifikasi resmi.
+  incorrectExplanation: Kurang pas! Ngumpulin komentar atau opini warganet itu bukan
+    verifikasi. Kamu harus cari liputan dari lembaga resmi atau media kredibel.
+  options:
+  - Periksa utas warganet lain
+  - Cek langsung ke situs resmi BMKG atau media arus utama
+  - Baca tanggapan warga di kolom komentar
+  - Buat postingan untuk bertanya
+  correctAnswerIndex: 1

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02376f25e1abb9c4e84f5007f2f3fecf, type: 3}
+  m_Name: Q07_MultipleChoice
+  m_EditorClassIdentifier: 
+  id: Q06_MultipleChoice
+  type: 0
+  questionText: Foto kerusuhan viral, tapi pas di-reverse search di Google Lens hasilnya
+    0 karena udah di-crop & di-mirror sama pembuat hoax. Langkah taktis selanjutnya
+    adalah...
+  correctExplanation: You're a pro! Foto yang di-mirror harus dikembaliin dulu ke
+    posisi normal biar algoritma Yandex/TinEye bisa nemuin gambar aslinya.
+  incorrectExplanation: '"Belum tepat! Cara paling efektif adalah balikin dulu orientasi
+    fotonya (un-mirror), baru search ulang pake tools seperti Yandex/TinEye karena
+    EXIF udah otomatis kehapus pas lewat WhatsApp/sosmed."'
+  options:
+  - Cek tanggal di Properties
+  - Rename file foto lalu upload ulang
+  - Edit balik foto ke posisi normal (un-mirror), terus search di Yandex/TinEye
+  - Minta file asli dikirim ke private message sosmed unntuk cek EXIF
+  correctAnswerIndex: 2

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02376f25e1abb9c4e84f5007f2f3fecf, type: 3}
+  m_Name: Q10_MultipleChoice
+  m_EditorClassIdentifier: 
+  id: Q06_MultipleChoice
+  type: 0
+  questionText: Beredar voice note WA mirip suara bupati lagi minta setoran proyek,
+    diduga buatan AI (voice cloning). Ciri fisik audio AI yang paling gampang dicurigai
+    adalah...
+  correctExplanation: Mantap! Prinsip Trace itu tujuannya melacak kembali ke sumber
+    asli (original context) buat ngebongkar pemotongan kalimat (quote-mining) biar
+    kamu gak gampang kemakan emosi.
+  incorrectExplanation: Belum tepat! Cara paling efisien buat nge-trace video itu
+    adalah screenshot momen paling jelas dari videonya, terus scan gambarnya pake
+    Google Lens atau Yandex. Nebak-nebak dari ciri fisik doang atau nanya ke orang
+    lain nggak seakurat itu.
+  options:
+  - Kosakatanya kaku dan formal
+  - Intonasi monoton, ritme kaku, dan nggak ada jeda napas alami
+  - Ada suara bising klakson di latar belakang
+  - Format filenya .webm
+  correctAnswerIndex: 1
