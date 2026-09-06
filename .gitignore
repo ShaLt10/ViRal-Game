@@ -105,6 +105,9 @@ InitTestScene*.unity*
 # Project Specific - DO NOT COMMIT
 # ========================================
 
+# Graphify generated output
+/graphify-out/
+
 # Build outputs (APK, executables, etc)
 apps/
 *.apk

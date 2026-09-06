@@ -186,7 +186,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493320126,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -458,7 +458,8 @@
                     "FX",
                     "Enemy",
                     "World",
-                    "NoMask"
+                    "NoMask",
+                    "NPC"
                 ],
                 "_slopeFilter": {
                     "_v1": 0.0,
@@ -485,7 +486,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493330122,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -629,7 +630,8 @@
                 "FX",
                 "Enemy",
                 "World",
-                "NoMask"
+                "NoMask",
+                "NPC"
             ],
             "_slopeFilter": {
                 "_v1": 0.0,
@@ -813,7 +815,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493330124,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1122,7 +1124,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493330126,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1411,7 +1413,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493345194,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1720,7 +1722,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493367174,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1967,7 +1969,7 @@
             "_outermostPrefabFilter": true,
             "_overwriteBrushProperties": false,
             "_brushProperties": {
-                "_id": 639210548493381680,
+                "_id": -1,
                 "_surfaceDistance": 0.0,
                 "_randomSurfaceDistance": false,
                 "_randomSurfaceDistanceRange": {
@@ -2134,7 +2136,8 @@
                     "FX",
                     "Enemy",
                     "World",
-                    "NoMask"
+                    "NoMask",
+                    "NPC"
                 ]
             }
         ],
@@ -2168,7 +2171,8 @@
                 "FX",
                 "Enemy",
                 "World",
-                "NoMask"
+                "NoMask",
+                "NPC"
             ]
         }
     },
@@ -2404,7 +2408,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493381682,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -2696,7 +2700,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": 639210548493381684,
+                    "_id": -1,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {

@@ -14,7 +14,7 @@ namespace OpalStudio.CustomToolbar.Editor.ToolbarElements
 
             public override void OnInit()
             {
-                  Texture icon = EditorGUIUtility.IconContent("d_SceneLayersToggle").image;
+                  Texture icon = EditorGUIUtility.IconContent("d_SceneViewVisibility").image;
                   _buttonContent = new GUIContent("Layers", icon, this.Tooltip);
 
                   this.Width = 80;
