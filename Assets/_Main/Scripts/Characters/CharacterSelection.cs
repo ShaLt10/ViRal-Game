@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using DG.Tweening;
 
 [DisallowMultipleComponent]
 public class CharacterSelection : MonoBehaviour
@@ -30,6 +31,8 @@ public class CharacterSelection : MonoBehaviour
     [SerializeField] private Button   charIntroChooseButton;
     [TextArea] [SerializeField] private string ralineIntro = "Hai! Aku Raline, siap bantuin!";
     [TextArea] [SerializeField] private string gaviIntro   = "Halo, aku Gavi. Yuk mulai!";
+    [SerializeField, Min(0.05f)] private float introAppearDuration = 0.22f;
+    [SerializeField, Min(1f)] private float introTypingSpeed = 38f;
 
     [Header("Portrait Assets")]
     [SerializeField] private Sprite ralinePortrait;
@@ -53,6 +56,9 @@ public class CharacterSelection : MonoBehaviour
     private int     selectedIndex     = -1; // 0 Raline / 1 Gavi
     private Coroutine narratorAutoCo;
     private CanvasGroup selectionGroup;
+    private CanvasGroup introGroup;
+    private Sequence introSequence;
+    private Vector3 introPanelScale;
 
     void Awake() => InitializeComponent();
 
@@ -64,6 +70,15 @@ public class CharacterSelection : MonoBehaviour
         selectionGroup = selectionRoot.GetComponent<CanvasGroup>();
         if (!selectionGroup) selectionGroup = selectionRoot.AddComponent<CanvasGroup>();
         selectionGroup.alpha = 1f;
+        ConfigureChoiceHitAreas();
+
+        if (charIntroPanel)
+        {
+            introGroup = charIntroPanel.GetComponent<CanvasGroup>();
+            if (!introGroup) introGroup = charIntroPanel.AddComponent<CanvasGroup>();
+            introPanelScale = charIntroPanel.transform.localScale;
+            ConfigureIntroRaycasts();
+        }
 
         // Bind buttons
         if (ralineButton) { ralineButton.onClick.RemoveAllListeners(); ralineButton.onClick.AddListener(() => OnCharacterSelected("Raline", 0)); }
@@ -89,6 +104,7 @@ public class CharacterSelection : MonoBehaviour
     void OnDisable()
     {
         if (narratorAutoCo != null) { StopCoroutine(narratorAutoCo); narratorAutoCo = null; }
+        introSequence?.Kill();
     }
 
     // === Entry dari MainMenu ===
@@ -170,8 +186,43 @@ public class CharacterSelection : MonoBehaviour
         if (charIntroPortrait) charIntroPortrait.sprite = (who == "Raline") ? ralinePortrait : gaviPortrait;
         if (charIntroName)     charIntroName.text   = (who == "Raline") ? ralineDisplayName : gaviDisplayName;
 
+        PlayCharacterIntro();
+
         if (charIntroChooseButton) Focus(charIntroChooseButton);
         Log($"ShowCharacterIntro: {who}");
+    }
+
+    private void PlayCharacterIntro()
+    {
+        if (!charIntroPanel || !introGroup) return;
+
+        introSequence?.Kill();
+        introGroup.alpha = 0f;
+        charIntroPanel.transform.localScale = introPanelScale * 0.96f;
+
+        int characterCount = 0;
+        if (charIntroText)
+        {
+            charIntroText.ForceMeshUpdate();
+            characterCount = charIntroText.textInfo.characterCount;
+            charIntroText.maxVisibleCharacters = 0;
+        }
+
+        introSequence = DOTween.Sequence()
+            .SetUpdate(true)
+            .SetLink(charIntroPanel, LinkBehaviour.KillOnDisable)
+            .Append(introGroup.DOFade(1f, introAppearDuration))
+            .Join(charIntroPanel.transform.DOScale(introPanelScale, introAppearDuration).SetEase(Ease.OutCubic));
+
+        if (charIntroText && characterCount > 0)
+        {
+            float typingDuration = characterCount / Mathf.Max(1f, introTypingSpeed);
+            introSequence.Append(DOTween.To(
+                () => charIntroText.maxVisibleCharacters,
+                value => charIntroText.maxVisibleCharacters = value,
+                characterCount,
+                typingDuration).SetEase(Ease.Linear));
+        }
     }
 
     private void OnChooseThis()
@@ -213,6 +264,34 @@ public class CharacterSelection : MonoBehaviour
     }
 
     // === Helpers ===
+    private void ConfigureIntroRaycasts()
+    {
+        Graphic chooseGraphic = charIntroChooseButton ? charIntroChooseButton.targetGraphic : null;
+        foreach (Graphic graphic in charIntroPanel.GetComponentsInChildren<Graphic>(true))
+            graphic.raycastTarget = graphic == chooseGraphic;
+    }
+
+    private void ConfigureChoiceHitAreas()
+    {
+        StretchRect(transform as RectTransform);
+        StretchRect(selectionRoot.transform as RectTransform);
+
+        if (gaviButton && ralineButton && gaviButton.transform.parent == ralineButton.transform.parent)
+            StretchRect(gaviButton.transform.parent as RectTransform);
+
+        if (gaviButton) StretchRect(gaviButton.transform as RectTransform, 0f, 0.5f);
+        if (ralineButton) StretchRect(ralineButton.transform as RectTransform, 0.5f, 1f);
+    }
+
+    private static void StretchRect(RectTransform rect, float minX = 0f, float maxX = 1f)
+    {
+        if (!rect) return;
+        rect.anchorMin = new Vector2(minX, 0f);
+        rect.anchorMax = new Vector2(maxX, 1f);
+        rect.offsetMin = Vector2.zero;
+        rect.offsetMax = Vector2.zero;
+    }
+
     private void SetChoiceLabelsVisible(bool visible)
     {
         Transform ralineLabel = ralineButton ? ralineButton.transform.Find("ChoiceLabel") : null;

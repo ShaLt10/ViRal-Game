@@ -17,7 +17,6 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject loadPanel;
     [SerializeField] private GameObject creditsPanel;
-    [SerializeField] private GameObject settingsScreen;
     [SerializeField] private GameObject openingPanel;
     [SerializeField] private GameObject characterSelectPanel;
 
@@ -25,7 +24,6 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Selectable firstOnTitle;
     [SerializeField] private Selectable firstOnLoad;
     [SerializeField] private Selectable firstOnCredits;
-    [SerializeField] private Selectable firstOnSettings;
     [SerializeField] private Selectable firstOnSelect;
 
     [Header("Load Menu")]
@@ -35,20 +33,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private TMP_Text loadSlot2Label;
     [SerializeField] private Button loadBackButton;
 
-    [Header("Controller Settings")]
-    [SerializeField] private Button joystickControlButton;
-    [SerializeField] private Button tapToMoveControlButton;
-    [SerializeField] private TMP_Text controlModeLabel;
-
-    [Header("General Settings")]
-    [SerializeField] private Slider volumeSlider;
-    [SerializeField] private TMP_Text volumeLabel;
-    [SerializeField] private Button indonesianLanguageButton;
-    [SerializeField] private Button englishLanguageButton;
-    [SerializeField] private TMP_Text settingsTitle;
-    [SerializeField] private TMP_Text controllerTitle;
-    [SerializeField] private TMP_Text languageTitle;
-    [SerializeField] private TMP_Text settingsBackLabel;
+    [Header("Menu Labels")]
     [SerializeField] private TMP_Text playLabel;
     [SerializeField] private TMP_Text loadLabel;
     [SerializeField] private TMP_Text settingsLabel;
@@ -85,7 +70,7 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         InitializePanelRegistry();
-        BindControllerSettings();
+        RefreshMenuLabels();
         if (loadBackButton != null)
             loadBackButton.onClick.AddListener(OnBackFromLoad);
         
@@ -267,16 +252,13 @@ public class MainMenuManager : MonoBehaviour
         DebugLog("⚙️ OnOpenSettings() called", DebugLevel.Info);
         LogButtonClick("Settings");
         
-        if (settingsScreen == null)
+        if (SettingsMenu.Instance == null)
         {
-            DebugLog("Cannot open Settings Screen - settingsScreen is not assigned!", DebugLevel.Error);
+            DebugLog("Cannot open Settings Screen - prefab is not loaded!", DebugLevel.Error);
             return;
         }
-        
-        ShowOnly(settingsScreen);
-        SelectFirst(ControlSettings.Current == ControlMode.Joystick
-            ? tapToMoveControlButton
-            : joystickControlButton);
+
+        SettingsMenu.Instance.Open();
     }
 
     /// <summary>
@@ -286,13 +268,10 @@ public class MainMenuManager : MonoBehaviour
     {
         DebugLog("⬅️ OnBackFromSettings() called", DebugLevel.Info);
         LogButtonClick("Back from Settings");
-        ShowOnly(titleScreen);
+        SettingsMenu.Instance?.Close();
+        RefreshMenuLabels();
         SelectFirst(firstOnTitle);
     }
-
-    public void SelectJoystickControl() => SetControlMode(ControlMode.Joystick);
-
-    public void SelectTapToMoveControl() => SetControlMode(ControlMode.TapToMove);
 
     /// <summary>
     /// Called when Back button in Character Select is clicked
@@ -313,76 +292,13 @@ public class MainMenuManager : MonoBehaviour
 
     #endregion
 
-    private void BindControllerSettings()
+    public void RefreshMenuLabels()
     {
-        if (joystickControlButton != null)
-            joystickControlButton.onClick.AddListener(SelectJoystickControl);
-        if (tapToMoveControlButton != null)
-            tapToMoveControlButton.onClick.AddListener(SelectTapToMoveControl);
-        if (volumeSlider != null)
-        {
-            volumeSlider.SetValueWithoutNotify(ControlSettings.Volume);
-            volumeSlider.onValueChanged.AddListener(SetVolume);
-        }
-        if (indonesianLanguageButton != null)
-            indonesianLanguageButton.onClick.AddListener(SelectIndonesianLanguage);
-        if (englishLanguageButton != null)
-            englishLanguageButton.onClick.AddListener(SelectEnglishLanguage);
-        RefreshControllerSettings();
-    }
-
-    private void SetControlMode(ControlMode mode)
-    {
-        ControlSettings.Set(mode);
-        RefreshControllerSettings();
-    }
-
-    public void SetVolume(float volume)
-    {
-        ControlSettings.SetVolume(volume);
-        RefreshControllerSettings();
-    }
-
-    public void SelectIndonesianLanguage()
-    {
-        ControlSettings.SetLanguage(UiLanguage.Indonesian);
-        RefreshControllerSettings();
-    }
-
-    public void SelectEnglishLanguage()
-    {
-        ControlSettings.SetLanguage(UiLanguage.English);
-        RefreshControllerSettings();
-    }
-
-    private void RefreshControllerSettings()
-    {
-        ControlMode mode = ControlSettings.Current;
         bool english = ControlSettings.Language == UiLanguage.English;
-        if (controlModeLabel != null)
-            controlModeLabel.text = mode == ControlMode.Joystick
-                ? (english ? "ACTIVE: JOYSTICK" : "AKTIF: JOYSTICK")
-                : (english ? "ACTIVE: TAP TO MOVE" : "AKTIF: TAP TO MOVE");
-
-        if (volumeLabel != null)
-            volumeLabel.text = $"VOLUME: {Mathf.RoundToInt(ControlSettings.Volume * 100f)}%";
-        if (settingsTitle != null) settingsTitle.text = english ? "SETTINGS" : "PENGATURAN";
-        if (controllerTitle != null) controllerTitle.text = english ? "CONTROL MODE" : "PILIH KONTROL";
-        if (languageTitle != null) languageTitle.text = english ? "LANGUAGE" : "BAHASA";
-        if (settingsBackLabel != null) settingsBackLabel.text = english ? "BACK" : "KEMBALI";
         if (playLabel != null) playLabel.text = english ? "PLAY" : "MAIN";
         if (loadLabel != null) loadLabel.text = english ? "LOAD" : "MUAT";
         if (settingsLabel != null) settingsLabel.text = english ? "SETTINGS" : "PENGATURAN";
         if (creditsLabel != null) creditsLabel.text = english ? "CREDITS" : "KREDIT";
-
-        if (joystickControlButton != null)
-            joystickControlButton.interactable = mode != ControlMode.Joystick;
-        if (tapToMoveControlButton != null)
-            tapToMoveControlButton.interactable = mode != ControlMode.TapToMove;
-        if (indonesianLanguageButton != null)
-            indonesianLanguageButton.interactable = english;
-        if (englishLanguageButton != null)
-            englishLanguageButton.interactable = !english;
     }
 
     #region Opening Animation
@@ -441,7 +357,6 @@ public class MainMenuManager : MonoBehaviour
             { "TitleScreen", titleScreen },
             { "LoadPanel", loadPanel },
             { "CreditsPanel", creditsPanel },
-            { "SettingsScreen", settingsScreen },
             { "OpeningPanel", openingPanel },
             { "CharacterSelectPanel", characterSelectPanel }
         };
@@ -460,7 +375,6 @@ public class MainMenuManager : MonoBehaviour
         SetPanelActive(titleScreen, target == titleScreen);
         SetPanelActive(loadPanel, target == loadPanel);
         SetPanelActive(creditsPanel, target == creditsPanel);
-        SetPanelActive(settingsScreen, target == settingsScreen);
         SetPanelActive(openingPanel, target == openingPanel);
         SetPanelActive(characterSelectPanel, target == characterSelectPanel);
     }
@@ -525,7 +439,6 @@ public class MainMenuManager : MonoBehaviour
         ValidateReference("titleScreen", titleScreen, true);
         ValidateReference("loadPanel", loadPanel, true);
         ValidateReference("creditsPanel", creditsPanel, true);
-        ValidateReference("settingsScreen", settingsScreen, true);
         ValidateReference("openingPanel", openingPanel, false);
         ValidateReference("characterSelectPanel", characterSelectPanel, false);
         
@@ -533,7 +446,6 @@ public class MainMenuManager : MonoBehaviour
         ValidateReference("firstOnTitle", firstOnTitle, false);
         ValidateReference("firstOnLoad", firstOnLoad, false);
         ValidateReference("firstOnCredits", firstOnCredits, false);
-        ValidateReference("firstOnSettings", firstOnSettings, false);
         ValidateReference("firstOnSelect", firstOnSelect, false);
         
         // Components

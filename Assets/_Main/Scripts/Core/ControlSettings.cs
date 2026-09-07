@@ -18,6 +18,8 @@ public static class ControlSettings
     private const string VolumeKey = "MasterVolume";
     private const string LanguageKey = "Language";
 
+    public static event System.Action<ControlMode> ControlModeChanged;
+
     public static ControlMode Current => PlayerPrefs.GetInt(ControlKey, 0) == 1
         ? ControlMode.TapToMove
         : ControlMode.Joystick;
@@ -32,6 +34,7 @@ public static class ControlSettings
     {
         PlayerPrefs.SetInt(ControlKey, mode == ControlMode.TapToMove ? 1 : 0);
         PlayerPrefs.Save();
+        ControlModeChanged?.Invoke(mode);
     }
 
     public static void SetVolume(float volume)

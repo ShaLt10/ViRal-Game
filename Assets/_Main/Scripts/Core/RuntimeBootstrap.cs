@@ -13,9 +13,11 @@ public static class RuntimeBootstrap
         Object.DontDestroyOnLoad(root);
         root.AddComponent<GameSession>();
         root.AddComponent<ObjectiveManager>();
+        root.AddComponent<AudioManager>();
 
         LoadPrefab("Managers/CharacterManager", root.transform);
         LoadPrefab("Managers/GeneratedDialog", root.transform);
+        LoadPrefab("Managers/SettingsUI", root.transform);
 
         GameObject dialogUI = LoadPrefab("Managers/DialogUI", root.transform);
         EnsureDialogCanvas(dialogUI);

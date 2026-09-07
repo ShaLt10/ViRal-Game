@@ -186,7 +186,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059835360,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -486,7 +486,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059836950,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -815,7 +815,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059837500,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1124,7 +1124,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059838000,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1413,7 +1413,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059842090,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1722,7 +1722,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059845330,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -1969,7 +1969,7 @@
             "_outermostPrefabFilter": true,
             "_overwriteBrushProperties": false,
             "_brushProperties": {
-                "_id": -1,
+                "_id": 639243954059848360,
                 "_surfaceDistance": 0.0,
                 "_randomSurfaceDistance": false,
                 "_randomSurfaceDistanceRange": {
@@ -2408,7 +2408,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059849550,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {
@@ -2700,7 +2700,7 @@
                 "_layer": 0,
                 "_overwriteBrushProperties": false,
                 "_brushSettings": {
-                    "_id": -1,
+                    "_id": 639243954059850070,
                     "_surfaceDistance": 0.0,
                     "_randomSurfaceDistance": false,
                     "_randomSurfaceDistanceRange": {

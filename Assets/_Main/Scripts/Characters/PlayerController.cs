@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     RuntimeAnimatorController Gavi;
+
+    private void OnEnable() => ControlSettings.ControlModeChanged += ApplyControlMode;
+
+    private void OnDisable() => ControlSettings.ControlModeChanged -= ApplyControlMode;
     
     private void Start()
     {
@@ -51,10 +55,7 @@ public class PlayerController : MonoBehaviour
                     navigationCollider.bounds.size.y) / grid.nodeSize;
             grid.collision.Initialize(grid.transform, grid.nodeSize);
         }
-        controlMode = ControlSettings.Current;
-        bool useJoystick = controlMode == ControlMode.Joystick;
-        if (joystick != null && joystick.background != null)
-            joystick.background.gameObject.SetActive(useJoystick);
+        ApplyControlMode(ControlSettings.Current);
         
         // FIXED: Gunakan CharacterManager singleton yang sudah ada
         if (CharacterManager.Instance != null)
@@ -77,6 +78,9 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (joystick != null && !joystick.isActiveAndEnabled)
+            joystick.ApplySafeArea();
+
         if (controlMode == ControlMode.TapToMove)
             HandleTap();
 
@@ -188,6 +192,14 @@ public class PlayerController : MonoBehaviour
     private Vector3 NavigationPosition => navigationCollider != null
         ? navigationCollider.bounds.center
         : transform.position;
+
+    private void ApplyControlMode(ControlMode mode)
+    {
+        controlMode = mode;
+        path = null;
+        if (joystick != null && joystick.background != null)
+            joystick.background.gameObject.SetActive(mode == ControlMode.Joystick);
+    }
 
     private void ResetFace()
     {

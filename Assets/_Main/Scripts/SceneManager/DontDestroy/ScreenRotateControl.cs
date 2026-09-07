@@ -9,21 +9,6 @@ public class ScreenRotateControl : Singleton<ScreenRotateControl>
     {
         base.OnDestroy(); // Important for cleanup!
     }
-    void Awake()
-    {
-        //LockOrientationToManual();
-    }
-
-    public void LockOrientationToManual()
-    {
-        SetLandscape();
-        // Disable all auto-rotate options
-        Screen.autorotateToLandscapeLeft = false;
-        Screen.autorotateToLandscapeRight = false;
-        Screen.autorotateToPortrait = false;
-        Screen.autorotateToPortraitUpsideDown = false;
-    }
-
     public void SetPortrait()
     {
         Screen.orientation = ScreenOrientation.Portrait;
@@ -31,6 +16,10 @@ public class ScreenRotateControl : Singleton<ScreenRotateControl>
 
     public void SetLandscape()
     {
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToPortrait = false;
+        Screen.autorotateToPortraitUpsideDown = false;
+        Screen.orientation = ScreenOrientation.AutoRotation;
     }
 }
